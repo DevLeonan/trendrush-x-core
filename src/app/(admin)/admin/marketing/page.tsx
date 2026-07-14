@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Copy, CheckCircle, ExternalLink, Activity, Megaphone } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge"; // <-- ADICIONE ESTA LINHA
 
 export default function MarketingAdminPage() {
@@ -56,14 +56,24 @@ export default function MarketingAdminPage() {
             
             <div className="flex gap-4">
               <Button variant="secondary" className="w-full" asChild>
-                <a href="https://merchants.google.com/" target="_blank" rel="noopener noreferrer">
-                  Google Merchant <ExternalLink className="w-3 h-3 ml-2" />
-                </a>
+                <a 
+				  href="https://merchants.google.com/" 
+				  target="_blank" 
+				  rel="noopener noreferrer"
+				  className={buttonVariants({ variant: "secondary", className: "w-full inline-flex items-center justify-center" })}
+				>
+				  Google Merchant <ExternalLink className="w-3 h-3 ml-2" />
+				</a>
               </Button>
               <Button variant="secondary" className="w-full" asChild>
-                <a href="https://business.facebook.com/commerce" target="_blank" rel="noopener noreferrer">
-                  Meta Catalog <ExternalLink className="w-3 h-3 ml-2" />
-                </a>
+                <a 
+				  href="https://business.facebook.com/commerce" 
+				  target="_blank" 
+				  rel="noopener noreferrer"
+				  className={buttonVariants({ variant: "secondary", className: "w-full inline-flex items-center justify-center" })}
+				>
+				  Meta Catalog <ExternalLink className="w-3 h-3 ml-2" />
+				</a>
               </Button>
             </div>
           </CardContent>
