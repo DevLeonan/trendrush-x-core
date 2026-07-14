@@ -14,11 +14,11 @@ class EnterpriseLogger {
       timestamp,
       level: level.toUpperCase(),
       message: payload.message,
-      ...(payload.context && { context: payload.context }),
-      ...(payload.error && { 
+      ...(payload.context ? { context: payload.context } : {}),
+      ...(payload.error ? { 
         error: payload.error instanceof Error ? payload.error.message : String(payload.error),
         stack: payload.error instanceof Error ? payload.error.stack : undefined
-      }),
+      } : {}),
     };
 
     return JSON.stringify(logEntry);
