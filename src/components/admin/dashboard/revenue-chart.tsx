@@ -69,7 +69,7 @@ export function RevenueChart() {
               <Tooltip 
                 contentStyle={{ backgroundColor: "#0D0D0D", borderColor: "#1F1F1F", borderRadius: "8px" }}
                 itemStyle={{ color: "#FFFFFF" }}
-                formatter={(value: number) => formatCurrency(value)}
+                formatter={(value: any) => formatCurrency(Number(value))}
               />
               <Area 
                 type="monotone" 
