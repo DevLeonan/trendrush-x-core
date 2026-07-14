@@ -55,26 +55,23 @@ export default function MarketingAdminPage() {
             </div>
             
             <div className="flex gap-4">
-              <Button variant="secondary" className="w-full" asChild>
-                <a 
+              <a 
 				  href="https://merchants.google.com/" 
 				  target="_blank" 
 				  rel="noopener noreferrer"
-				  className={buttonVariants({ variant: "secondary", className: "w-full inline-flex items-center justify-center" })}
+				  className="flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/80"
 				>
 				  Google Merchant <ExternalLink className="w-3 h-3 ml-2" />
 				</a>
-              </Button>
-              <Button variant="secondary" className="w-full" asChild>
-                <a 
+
+				<a 
 				  href="https://business.facebook.com/commerce" 
 				  target="_blank" 
 				  rel="noopener noreferrer"
-				  className={buttonVariants({ variant: "secondary", className: "w-full inline-flex items-center justify-center" })}
+				  className="flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/80"
 				>
 				  Meta Catalog <ExternalLink className="w-3 h-3 ml-2" />
-				</a>
-              </Button>
+			  </a>
             </div>
           </CardContent>
         </Card>
