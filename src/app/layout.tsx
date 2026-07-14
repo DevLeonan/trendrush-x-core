@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} antialiased scroll-smooth`}>
+    <html lang="pt-BR" className="dark">
       <body className="min-h-screen bg-background text-foreground flex flex-col font-sans overflow-x-hidden selection:bg-brand-purple selection:text-white">
         {/* Futuramente injetaremos Providers Globais aqui (Zustand, Toaster, Analytics) */}
         {children}
