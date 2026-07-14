@@ -4,6 +4,7 @@ import * as React from "react";
 import { Copy, CheckCircle, ExternalLink, Activity, Megaphone } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge"; // <-- ADICIONE ESTA LINHA
 
 export default function MarketingAdminPage() {
   const [copiedFeed, setCopiedFeed] = React.useState(false);
