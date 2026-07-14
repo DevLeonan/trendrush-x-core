@@ -8,8 +8,7 @@ if (!process.env.MERCADOPAGO_ACCESS_TOKEN) {
 const client = new MercadoPagoConfig({
   accessToken: process.env.MERCADOPAGO_ACCESS_TOKEN,
   options: { 
-    timeout: 10000, // Timeout estrito para evitar travamento no checkout
-    idempotencyKey: true 
+    timeout: 10000 // Timeout estrito para evitar travamento no checkout
   }
 });
 
