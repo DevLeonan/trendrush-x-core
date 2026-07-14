@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 // Otimização de fonte nativa do Next.js (Zero Cumulative Layout Shift)
+// Otimização de fonte nativa do Next.js (Zero Cumulative Layout Shift)
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-inter",
