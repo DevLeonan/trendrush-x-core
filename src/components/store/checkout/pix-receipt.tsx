@@ -70,8 +70,8 @@ export function PixReceipt({ qrCodeBase64, copyPaste, amount, orderNumber }: Pix
           />
           <Button 
             onClick={handleCopy} 
-            variant={copied ? "success" : "premium"}
-            className="h-12 px-6"
+            variant="premium"
+            className={`h-12 px-6 transition-colors ${copied ? "bg-brand-green hover:bg-brand-green/80 text-white border-brand-green" : ""}`}
           >
             {copied ? <CheckCircle className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
           </Button>
