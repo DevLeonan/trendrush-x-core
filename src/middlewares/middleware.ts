@@ -33,7 +33,7 @@ export function middleware(request: NextRequest) {
 
   // 3. Sistema Base de Rate Limit contra Bots de Teste de Cartão (Proteção de Checkout)
   if (pathname.startsWith('/api/checkout')) {
-    const ip = request.ip ?? request.headers.get('x-forwarded-for') ?? 'unknown';
+    const ip = request.headers.get('x-forwarded-for') ?? 'unknown';
     // Aqui injetaremos a lógica avançada de Rate Limiting futuro (ex: Redis/Upstash)
     response.headers.set('X-RateLimit-Limit', '20');
   }
