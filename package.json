@@ -33,6 +33,7 @@
     "react": "19.0.0-rc-65a56d0e-20241020",
     "react-dom": "19.0.0-rc-65a56d0e-20241020",
     "react-hook-form": "^7.53.0",
+    "recharts": "^3.9.2",
     "tailwind-merge": "^2.5.2",
     "zod": "^3.23.8",
     "zustand": "^5.0.0"
