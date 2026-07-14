@@ -3,6 +3,7 @@ import { Users } from "lucide-react";
 import { crmService } from "@/services/users/crm-service";
 import { CustomerTable } from "@/components/admin/crm/customer-table";
 
+export const dynamic = 'force-dynamic';
 // Server Component: Busca os dados de forma segura direto do banco de dados na hora do carregamento
 export default async function CrmPage() {
   const customers = await crmService.getCustomersList();
